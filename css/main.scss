@@ -64,7 +64,7 @@ nav {
   .close {
     float: right;
     margin: 2em;
-    width: 2.5em;
+    width: 2em;
   }
 }
 
@@ -73,7 +73,7 @@ header {
   justify-content: space-between;
 
   svg {
-    width: 3em;
+    width: 2em;
     margin-top: 0;
     cursor: pointer;
   }
@@ -123,6 +123,10 @@ section.hero {
   .subtitle {
     line-height: 1.25rem;
   }
+}
+
+.open-nav {
+  transform: translateY(0);
 }
 
 @media only screen and (min-width: 680px) {
