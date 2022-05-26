@@ -70,7 +70,7 @@ nav ul a:hover {
 nav .close {
   float: right;
   margin: 2em;
-  width: 2.5em;
+  width: 2em;
 }
 
 header {
@@ -83,7 +83,7 @@ header {
 }
 
 header svg {
-  width: 3em;
+  width: 2em;
   margin-top: 0;
   cursor: pointer;
 }
@@ -132,6 +132,11 @@ section.hero .down-arrow path {
 
 .more-info .subtitle {
   line-height: 1.25rem;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media only screen and (min-width: 680px) {
