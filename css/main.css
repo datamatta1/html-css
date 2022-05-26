@@ -17,13 +17,18 @@ a {
   background-position-x: 20%;
   background-position-y: 20%;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   z-index: -1;
 }
 
 .logo {
   color: white;
   font-weight: bold;
+  font-size: 2rem;
+}
+
+.logo span {
+  color: #c1f4c5;
 }
 
 nav {
@@ -121,5 +126,107 @@ section.hero .down-arrow path {
 
 .more-info .subtitle {
   line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  nav ul a:hover {
+    background: none;
+    color: #c1f4c5;
+    text-decoration: underline;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: #c1f4c5;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
+  .feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 25em;
+    text-align: right;
+  }
+  .feature.flip {
+        grid-template-areas: "left right";
+  }
+  .feature.flip img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: left;
+  }
+  .feature.flip .content {
+    text-align: left;
+    width: 25em;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feature {
+    gap: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
