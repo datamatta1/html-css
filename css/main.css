@@ -134,6 +134,11 @@ section.hero .down-arrow path {
   line-height: 1.25rem;
 }
 
+.open-nav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 5em;
